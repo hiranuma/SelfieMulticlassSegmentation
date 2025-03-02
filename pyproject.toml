@@ -1,0 +1,29 @@
+[project]
+name = "selfiemulticlasssegmentation"
+version = "0.1.0"
+description = "Selfie multiclass segmentation using mediapipe"
+authors = [
+    { name = "hiranuma", email = "" }
+]
+dependencies = [
+    "mediapipe>=0.10.0",
+    "opencv-python>=4.5.0"
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "opencv-python>=4.5.0"
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/selfiemulticlasssegmentation"]
