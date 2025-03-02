@@ -23,6 +23,16 @@ rye sync
 .venv\Scripts\activate
 ```
 
+## Download the Model
+
+Before running the application, you need to download the required model file:
+
+### Direct Download Link
+
+[Download selfie_multiclass_256x256.tflite](https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_multiclass_256x256/float32/latest/selfie_multiclass_256x256.tflite)
+
+Save the tflite file directly into src/selfiesegmentation/assets/models dir.
+
 ## Usage
 
 ### Command Line Interface
